@@ -20,6 +20,8 @@ public class CasoEstudio2 {
             System.out.println(lista.toString());
             lista.ConsultarMarca(JOptionPane.showInputDialog("Ingrese la marca"));
             lista.ConsultarRam(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de ram")));
+            lista.Modificar(Integer.parseInt(JOptionPane.showInputDialog("Digite el indice de la lista para modificar")));
+            System.out.println(lista.toString());
 
         
         

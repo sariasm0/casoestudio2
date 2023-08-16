@@ -46,7 +46,7 @@ public class Computadora {
  
  @Override
  public String toString(){
-     return "procesador: "+this.procesador+" marca: "+this.marca+" almacenamiento: "+this.almacenamiento+" ram: "+this.ram;
+     return "Procesador: "+this.procesador+" Marca: "+this.marca+" Almacenamiento: "+this.almacenamiento+" Ram: "+this.ram;
  }
  
 }
