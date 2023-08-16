@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package casoestudio2;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author sebas
@@ -15,12 +15,12 @@ public class CasoEstudio2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Computadora computadora1 = new Computadora("amd", "asus", 12, 43);
-        System.out.println(computadora1.toString());
-        computadora1.setMarca("toshiba");
-        System.out.println(computadora1.toString());
-        Computadora computadora2 = new Computadora("intel", "nvidia", 15, 23);
-        System.out.println(computadora2.toString());
+        ListaComputadora lista = new ListaComputadora();
+            lista.llenar();
+            System.out.println(lista.toString());
+            lista.ConsultarMarca(JOptionPane.showInputDialog("Ingrese la marca"));
+            lista.ConsultarRam(Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de ram")));
+
         
         
         
